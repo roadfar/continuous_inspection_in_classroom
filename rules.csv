@@ -1,0 +1,142 @@
+id,name,plugin_rule_key,plugin_config_key,plugin_name,description,priority,template_id,status,language,note_created_at,note_updated_at,note_user_login,note_data,remediation_function,def_remediation_function,remediation_gap_mult,def_remediation_gap_mult,remediation_base_effort,def_remediation_base_effort,gap_description,tags,system_tags,is_template,description_format,created_at,updated_at,rule_type
+10,Source files should not have any duplicated blocks,DuplicatedBlocks,,common-java,,2,,READY,java,,,,,,LINEAR_OFFSET,,10min,,10min,number of duplicate blocks,,pitfall,0,HTML,1477918943923,1477918943923,1
+414,Try-with-resources should be used,S2093,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,pitfall",0,HTML,1477918944378,1478139862378,1
+416,Return values should not be ignored when they contain the operation status code,S899,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,cwe,error-handling,misra",0,HTML,1477918944381,1478139862382,3
+417,Resources should be closed,S2095,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,cwe,denial-of-service,leak",0,HTML,1477918944382,1478139862383,2
+418,Classes should not be empty,S2094,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,clumsy,0,HTML,1477918944383,1478139862385,1
+421,""equals(Object obj)"" and ""hashCode()"" should be overridden in pairs,S1206,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,cwe",0,HTML,1477918944386,1478139862387,2
+430,""public static"" fields should be constant,S1444,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,"cert,cwe",0,HTML,1477918944397,1478139862400,3
+431,Modifiers should be declared in the correct order,ModifiersOrderCheck,S1124,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,convention,0,HTML,1477918944398,1478139862401,1
+434,Inheritance tree of classes should not be too deep,MaximumInheritanceDepth,S110,squid,,2,,READY,java,,,,,,LINEAR_OFFSET,,30min,,4h,Number of parents above the defined threshold,,design,0,HTML,1477918944401,1478139862405,1
+438,Declarations should use Java collection interfaces such as ""List"" rather than specific implementation classes such as ""LinkedList"",S1319,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,bad-practice,0,HTML,1477918944405,1478139862409,1
+443,IP addresses should not be hardcoded,S1313,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,cert,0,HTML,1477918944409,1478139862415,3
+444,Non-thread-safe fields should not be static,S2885,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,multi-threading,0,HTML,1477918944410,1478139862415,2
+446,The Object.finalize() method should not be overriden,ObjectFinalizeOverridenCheck,S1113,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,"cert,unpredictable",0,HTML,1477918944411,1478139862417,2
+447,""for"" loop stop conditions should be invariant,ForLoopCounterChangedCheck,S127,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"misra,pitfall",0,HTML,1477918944412,1478139862418,1
+448,"Method parameters, caught exceptions and foreach variables should not be reassigned",S1226,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"misra,pitfall",0,HTML,1477918944413,1478139862419,2
+451,""Threads"" should not be used where ""Runnables"" are expected,S2438,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"multi-threading,pitfall",0,HTML,1477918944414,1478139862422,1
+452,The default unnamed package should not be used,S1220,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,convention,0,HTML,1477918944415,1478139862422,1
+457,Methods should not return constants,S3400,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,confusing,0,HTML,1477918944418,1478139862426,1
+461,Execution of the Garbage Collector should be triggered only by the JVM,S1215,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,"bad-practice,unpredictable",0,HTML,1477918944421,1478139862429,1
+466,""equals(Object obj)"" should be overridden along with the ""compareTo(T obj)"" method,S1210,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,,0,HTML,1477918944425,1478139862442,2
+473,The members of an interface declaration or class should appear in a pre-defined order,S1213,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,convention,0,HTML,1477918944429,1478139862446,1
+475,Constants should not be defined in interfaces,S1214,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,bad-practice,0,HTML,1477918944431,1478139862448,1
+479,""throws"" declarations should not be superfluous,RedundantThrowsDeclarationCheck,S1130,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"clumsy,redundant,unused",0,HTML,1477918944434,1478139862452,1
+480,The diamond operator (""<>"") should be used,S2293,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,1min,,,clumsy,0,HTML,1477918944434,1478139862454,1
+485,""clone"" should not be overridden,S2975,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,suspicious,0,HTML,1477918944437,1478139862458,1
+486,Class variable fields should not have public accessibility,ClassVariableVisibilityCheck,S1104,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,cwe,0,HTML,1477918944438,1478139862459,3
+492,Short-circuit logic should be used in boolean contexts,S2178,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,cert,0,HTML,1477918944442,1478139862464,2
+499,String function use should be optimized for single characters,S3027,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"clumsy,performance",0,HTML,1477918944447,1478139862470,2
+502,Strings should not be concatenated using '+' in a loop,S1643,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,performance,0,HTML,1477918944450,1478139862472,2
+503,Identical expressions should not be used on both sides of a binary operator,S1764,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,cert,0,HTML,1477918944451,1478139862473,2
+507,String literals should not be duplicated,S1192,,squid,,3,,READY,java,,,,,,LINEAR_OFFSET,,2min,,2min,per duplicate instance,,design,0,HTML,1477918944455,1478139862476,1
+508,Exception types should not be tested using ""instanceof"" in catch blocks,S1193,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"cert,clumsy,error-handling",0,HTML,1477918944456,1478139862476,1
+509,Subclasses that add fields should override ""equals"",S2160,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,suspicious,0,HTML,1477918944457,1478139862477,2
+512,Sections of code should not be ""commented out"",CommentedOutCodeLine,S125,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"misra,unused",0,HTML,1477918944460,1478139862479,1
+518,"Array designators ""[]"" should be on the type, not the variable",S1197,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,convention,0,HTML,1477918944465,1478139862484,1
+522,Nested code blocks should not be used,S1199,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,bad-practice,0,HTML,1477918944469,1478139862487,1
+523,Classes named like ""Exception"" should extend ""Exception"" or a subclass,S2166,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"convention,pitfall",0,HTML,1477918944469,1478139862488,1
+524,Two branches in the same conditional structure should not have exactly the same implementation,S1871,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"design,suspicious",0,HTML,1477918944470,1478139862488,2
+525,Classes should not be compared by name,S1872,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,cwe",0,HTML,1477918944471,1478139862489,2
+526,""for"" loop incrementers should modify the variable being tested in the loop's stop condition,S1994,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,suspicious,0,HTML,1477918944472,1478139862490,2
+532,Empty statements should be removed,EmptyStatementUsageCheck,S1116,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,"cert,misra,unused",0,HTML,1477918944477,1478139862496,2
+540,""switch"" statements should have at least 3 ""case"" clauses,S1301,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"bad-practice,misra",0,HTML,1477918944484,1478139862503,1
+542,Standard outputs should not be used directly to log anything,S106,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"bad-practice,cert",0,HTML,1477918944486,1478139862505,1
+544,Ints and longs should not be shifted by zero or more than their number of bits-1,S2183,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,cert,0,HTML,1477918944487,1478139862506,2
+547,Silly math should not be performed,S2185,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,clumsy,0,HTML,1477918944489,1478139862508,1
+548,Math operands should be cast before assignment,S2184,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,cwe,misra,sans-top25-risky",0,HTML,1477918944490,1478139862509,2
+552,Multiple variables should not be declared on the same line,S1659,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,"cert,convention,misra",0,HTML,1477918944493,1478139862512,1
+555,Raw byte values should not be used in bitwise operations in combination with shifts,S3034,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,cert,0,HTML,1477918944495,1478139862515,2
+559,Credentials should not be hard-coded,S2068,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,"cert,cwe,owasp-a2,sans-top25-porous",0,HTML,1477918944498,1478139862518,3
+560,Loops should not be infinite,S2189,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,cert,0,HTML,1477918944498,1478139862519,2
+561,Assignments should not be made from within sub-expressions,AssignmentInSubExpressionCheck,S1121,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,cwe,misra,suspicious",0,HTML,1477918944499,1478139862520,1
+562,""private"" methods called only by inner classes should be moved to those classes,S3398,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,confusing,0,HTML,1477918944500,1478139862523,1
+566,""entrySet()"" should be iterated when both the key and value are needed,S2864,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,performance,0,HTML,1477918944502,1478139862525,2
+568,Public methods should throw at most one checked exception,S1160,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,error-handling,0,HTML,1477918944504,1478139862526,1
+569,Loops should not contain more than a single ""break"" or ""continue"" statement,S135,,squid,,2,,READY,java,,,,,,LINEAR,,20min,,,"per extra [""break"" or ""continue""|""CONTINUE"", ""EXIT"", ""CHECK""] statement",,brain-overload,0,HTML,1477918944505,1478139862527,1
+570,""@Override"" should be used on overriding and implementing methods,S1161,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,bad-practice,0,HTML,1477918944505,1478139862528,1
+572,Parsing should be used to convert ""Strings"" to primitives,S2130,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,performance,0,HTML,1477918944507,1478139862529,2
+577,Deprecated elements should have both the annotation and the Javadoc tag,MissingDeprecatedCheck,S1123,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"bad-practice,obsolete",0,HTML,1477918944511,1478139862532,1
+580,Methods and field names should not be the same or differ only by capitalization,S1845,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,confusing,0,HTML,1477918944514,1478139862534,1
+581,Anonymous inner classes containing only one method should become lambdas,S1604,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,java8,0,HTML,1477918944515,1478139862535,1
+588,Primitives should not be boxed just for ""String"" conversion,S2131,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,performance,0,HTML,1477918944522,1478139862539,2
+589,Exception classes should be immutable,S1165,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,error-handling,0,HTML,1477918944523,1478139862540,1
+590,Classes extending java.lang.Thread should override the ""run"" method,S2134,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"multi-threading,pitfall",0,HTML,1477918944523,1478139862540,2
+591,Exception handlers should preserve the original exceptions,S1166,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"cert,error-handling,suspicious",0,HTML,1477918944524,1478139862541,2
+596,Empty arrays and collections should be returned instead of null,S1168,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,cert,0,HTML,1477918944528,1478139862547,1
+597,Null pointers should not be dereferenced,S2259,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"cert,cwe",0,HTML,1477918944529,1478139862547,2
+600,Class names should comply with a naming convention,S00101,S101,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,convention,0,HTML,1477918944532,1478139862550,1
+601,Switch cases should end with an unconditional ""break"" statement,S128,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"cert,cwe,misra,suspicious",0,HTML,1477918944533,1478139862550,2
+602,Method names should comply with a naming convention,S00100,S100,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,convention,0,HTML,1477918944534,1478139862551,1
+603,Methods should not be too complex,MethodCyclomaticComplexity,S1541,squid,,3,,READY,java,,,,,,LINEAR_OFFSET,,1min,,10min,per complexity point above the threshold,,brain-overload,0,HTML,1477918944536,1478139862552,1
+606,""switch case"" clauses should not have too many lines,S1151,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,brain-overload,0,HTML,1477918944539,1478139862554,1
+611,"Control flow statements ""if"", ""for"", ""while"", ""switch"" and ""try"" should not be nested too deeply",S134,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,brain-overload,0,HTML,1477918944545,1478139862558,1
+612,String.valueOf() should not be appended to a String,S1153,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,clumsy,0,HTML,1477918944546,1478139862558,1
+615,Collection.isEmpty() should be used to test for emptiness,S1155,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,clumsy,0,HTML,1477918944549,1478139862560,2
+618,Case insensitive string comparisons should be made without intermediate upper or lower casing,S1157,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,clumsy,0,HTML,1477918944552,1478139862562,2
+623,Throwable and Error should not be caught,S1181,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,"cert,cwe,error-handling",0,HTML,1477918944556,1478139862566,2
+624,Classes that override ""clone"" should be ""Cloneable"" and call ""super.clone()"",S1182,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,"cert,cwe",0,HTML,1477918944557,1478139862567,2
+629,Local variables should not shadow class fields,HiddenFieldCheck,S1117,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,pitfall",0,HTML,1477918944561,1478139862572,1
+630,Static non-final field names should comply with a naming convention,S3008,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,convention,0,HTML,1477918944561,1478139862573,1
+631,"Public types, methods and fields (API) should be documented with Javadoc",UndocumentedApi,S1176,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,convention,0,HTML,1477918944563,1478139862573,1
+634,Overriding methods should do more than simply call the same method in the super class,S1185,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,"clumsy,redundant",0,HTML,1477918944566,1478139862583,1
+637,Methods should not be empty,S1186,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,suspicious,0,HTML,1477918944568,1478139862587,1
+639,""Object.wait(...)"" and ""Condition.await(...)"" should be called inside a ""while"" loop,S2274,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,"cert,multi-threading",0,HTML,1477918944569,1478139862589,2
+641,Collapsible ""if"" statements should be merged,S1066,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,clumsy,0,HTML,1477918944571,1478139862591,1
+644,Expressions should not be too complex,S1067,,squid,,3,,READY,java,,,,,,LINEAR_OFFSET,,1min,,5min,per complexity point above the threshold,,brain-overload,0,HTML,1477918944573,1478139862593,1
+645,Lambdas and anonymous classes should not have too many lines,S1188,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,java8,0,HTML,1477918944575,1478139862594,1
+647,Unused ""private"" fields should be removed,S1068,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,unused",0,HTML,1477918944576,1478139862595,1
+651,Related ""if/else if"" statements should not have the same condition,S1862,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,"cert,pitfall,unused",0,HTML,1477918944580,1478139862597,2
+655,Public constants and fields initialized at declaration should be ""static final"" rather than merely ""final"",S1170,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,convention,0,HTML,1477918944583,1478139862600,1
+657,Unused method parameters should be removed,S1172,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,misra,unused",0,HTML,1477918944585,1478139862602,1
+659,Methods of ""Random"" that return floating point values should not be used in random integer generation,S2140,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,clumsy,0,HTML,1477918944586,1478139862603,2
+660,@FunctionalInterface annotation should be used to flag Single Abstract Method interfaces,S1609,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,java8,0,HTML,1477918944587,1478139862603,1
+665,Dead stores should be removed,S1854,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,cwe,suspicious,unused",0,HTML,1477918944591,1478139862606,2
+666,""toString()"" should never be called on a String object,S1858,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,"clumsy,finding",0,HTML,1477918944592,1478139862607,2
+670,""InterruptedException"" should not be ignored,S2142,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cwe,multi-threading",0,HTML,1477918944595,1478139862609,2
+671,Child class fields should not shadow parent class fields,S2387,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,confusing,0,HTML,1477918944596,1478139862610,1
+673,Mutable fields should not be ""public static"",S2386,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,cwe,unpredictable",0,HTML,1477918944597,1478139862611,3
+674,Catches should be combined,S2147,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,clumsy,0,HTML,1477918944598,1478139862611,1
+678,Abstract classes without fields should be converted to interfaces,S1610,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,java8,0,HTML,1477918944603,1478139862613,1
+680,Unused local variables should be removed,S1481,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,unused,0,HTML,1477918944605,1478139862615,1
+681,""switch"" statements should end with ""default"" clauses,SwitchLastCaseIsDefaultCheck,S131,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,cwe,misra",0,HTML,1477918944605,1478139862615,1
+682,""@Deprecated"" code should not be used,CallToDeprecatedMethod,S1874,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,cwe,obsolete",0,HTML,1477918944607,1478139862618,1
+691,Floating point numbers should not be tested for equality,S1244,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,misra,0,HTML,1477918944615,1478139862623,2
+695,Instance methods should not write to ""static"" fields,S2696,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,multi-threading,0,HTML,1477918944619,1478139862625,1
+697,Boolean literals should not be redundant,S1125,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,clumsy,0,HTML,1477918944620,1478139862627,1
+698,Local Variables should not be declared and then immediately returned or thrown,S1488,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,clumsy,0,HTML,1477918944621,1478139862627,1
+701,Return of boolean expressions should not be wrapped into an ""if-then-else"" statement,S1126,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,clumsy,0,HTML,1477918944624,1478139862629,1
+703,Useless parentheses around expressions should be removed to prevent any misunderstanding,UselessParenthesesCheck,S1110,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,1min,,,confusing,0,HTML,1477918944626,1478139862631,1
+704,Unused ""private"" methods should be removed,UnusedPrivateMethod,S1144,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,unused",0,HTML,1477918944626,1478139862632,1
+705,Redundant casts should not be used,S1905,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"clumsy,redundant",0,HTML,1477918944627,1478139862633,1
+706,Useless imports should be removed,UselessImportCheck,S1128,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,unused,0,HTML,1477918944628,1478139862634,1
+707,""switch"" statements should not have too many ""case"" clauses,S1479,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,brain-overload,0,HTML,1477918944628,1478139862634,1
+710,Utility classes should not have public constructors,S1118,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,design,0,HTML,1477918944631,1478139862637,1
+717,Multiline blocks should be enclosed in curly braces,S2681,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,"cert,cwe",0,HTML,1477918944638,1478139862641,2
+724,Package declaration should match source file directory,S1598,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,pitfall,0,HTML,1477918944645,1478139862645,1
+728,Blocks should be synchronized on ""private final"" fields,S2445,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,cwe,multi-threading",0,HTML,1477918944649,1478139862647,2
+729,Generic exceptions should never be thrown,S00112,S112,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,"cert,cwe,error-handling",0,HTML,1477918944650,1478139862650,2
+731,"Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",S1149,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,performance,0,HTML,1477918944651,1478139862651,2
+732,Non-serializable classes should not be written,S2118,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,serialization,0,HTML,1477918944652,1478139862655,2
+734,A field should not duplicate the name of its containing class,S1700,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,brain-overload,0,HTML,1477918944654,1478139862656,1
+737,Fields in a ""Serializable"" class should either be transient or serializable,S1948,,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,"cwe,serialization",0,HTML,1477918944657,1478139862659,2
+738,Methods should not have too many parameters,S00107,S107,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,brain-overload,0,HTML,1477918944658,1478139862660,1
+739,Try-catch blocks should not be nested,S1141,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,confusing,0,HTML,1477918944659,1478139862660,1
+745,""URL.hashCode"" and ""URL.equals"" should be avoided,S2112,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,20min,,,performance,0,HTML,1477918944664,1478139862664,2
+747,Nested blocks of code should not be left empty,S00108,S108,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,5min,,,suspicious,0,HTML,1477918944666,1478139862665,1
+752,Useless ""if(true) {...}"" and ""if(false){...}"" blocks should be removed,S1145,,squid,,2,,DEPRECATED,java,,,,,,CONSTANT_ISSUE,,,,2min,,,"cwe,misra",0,HTML,1477918944670,1478139862668,2
+756,Exit methods should not be called,S1147,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,"cert,cwe,suspicious",0,HTML,1477918944673,1478139862671,2
+758,Files should not have too many lines,S00104,S104,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,1h,,,brain-overload,0,HTML,1477918944674,1478139862672,1
+759,Throwable.printStackTrace(...) should not be called,S1148,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,error-handling,0,HTML,1477918944676,1478139862673,3
+760,"Methods ""wait(...)"", ""notify()"" and ""notifyAll()"" should not be called on Thread instances",S2236,,squid,,4,,READY,java,,,,,,CONSTANT_ISSUE,,,,30min,,,multi-threading,0,HTML,1477918944676,1478139862674,2
+763,Package names should comply with a naming convention,S00120,S120,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,convention,0,HTML,1477918944679,1478139862677,1
+764,Statements should be on separate lines,S00122,S122,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,1min,,,convention,0,HTML,1477918944680,1478139862677,1
+770,Conditions should not unconditionally evaluate to ""TRUE"" or to ""FALSE"",S2583,,squid,,2,,READY,java,,,,,,CONSTANT_ISSUE,,,,15min,,,"cert,cwe,misra,pitfall",0,HTML,1477918944685,1478139862682,2
+771,Local variable and method parameter names should comply with a naming convention,S00117,S117,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,convention,0,HTML,1477918944686,1478139862683,1
+772,Strings literals should be placed on the left side when checking for equality,S1132,,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,bad-practice,0,HTML,1477918944687,1478139862684,2
+775,Type parameter names should comply with a naming convention,S00119,S119,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,convention,0,HTML,1477918944690,1478139862685,1
+776,Deprecated code should be removed,S1133,,squid,,0,,READY,java,,,,,,CONSTANT_ISSUE,,,,10min,,,obsolete,0,HTML,1477918944691,1478139862686,1
+779,Track uses of ""FIXME"" tags,S1134,,squid,,2,,READY,java,,,,,,,,,,,,,cwe,0,HTML,1477918944694,1478139862689,1
+781,Track uses of ""TODO"" tags,S1135,,squid,,0,,READY,java,,,,,,,,,,,,,cwe,0,HTML,1477918944696,1478139862690,1
+782,Field names should comply with a naming convention,S00116,S116,squid,,1,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,convention,0,HTML,1477918944696,1478139862690,1
+784,Constant names should comply with a naming convention,S00115,S115,squid,,3,,READY,java,,,,,,CONSTANT_ISSUE,,,,2min,,,convention,0,HTML,1477918944698,1478139862692,1
